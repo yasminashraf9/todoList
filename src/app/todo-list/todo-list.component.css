@@ -1,0 +1,52 @@
+
+div.container{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 10%;
+}
+section{
+    background-color: rgb(243, 243, 243);
+    width: 40%;
+    height: fit-content;
+    text-align: center;
+    padding: 50px 30px;
+    filter: drop-shadow(1px 1px 3px rgb(209, 209, 209));
+}
+section h3{
+    display: inline-block;
+    margin: 0 15px;
+}
+section .flex{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 50px;
+}
+section:first-child button{
+    border: none;
+    border-radius: 25px;
+    background-color: transparent;
+}
+section:first-child button:first-child{
+    background-color: white;
+}
+section:first-child button:first-child i{
+    visibility: hidden;
+}
+section:first-child button:first-child:hover i{
+    visibility: visible;
+}
+section:first-child button:last-child{
+    color: red;
+    margin: 0 20px;
+}
+section:first-child button.edit{
+    background-color: transparent;
+    padding: 5px 10px;
+    color: rgb(1, 1, 206);
+}
+section p{
+    margin: 50px auto;
+    color: rgb(150, 149, 149);
+    font-size: 2rem;
+}

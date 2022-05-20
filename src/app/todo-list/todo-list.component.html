@@ -1,0 +1,37 @@
+<div class="container">
+    <section>
+        <h1><strong>Todos For Today</strong></h1>
+        <div *ngFor = "let todo of todos" >
+            <div *ngIf="!todo.done" class="flex">
+                <div>
+                    <button (click)="doneTodo(todo)"><i class="fa-solid fa-check"></i></button>
+                    <h3><strong>{{todo.content}}</strong></h3>
+                </div>
+                <div>
+                    <button (click)="editContent(todo.id)" class="edit"><strong>edit</strong></button>
+                    <button (click)="deleteTodo(todo.id)"><i class="fa-solid fa-trash"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <h1><strong>Done Todos</strong></h1>
+        <div *ngIf="!doneTodos">
+            <p>it's never late to start</p>
+        </div>
+        <div *ngIf="doneTodos">
+            <div *ngFor = "let todo of todos" >
+                <div *ngIf="todo.done" class="flex">
+                    <div>
+                        <i class="fa-solid fa-check"></i>
+                        <h3><strong>{{todo.content}}</strong></h3>
+                    </div>
+                    <div>
+                        <button (click)="deleteTodo(todo.id)"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+</div>

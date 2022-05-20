@@ -1,0 +1,9 @@
+<section>
+  <input type="text" placeholder="Add New TODO"
+  [(ngModel)]="inputContent" id="todoContent" name="todoContent">
+  <button (click)="addTodo()">Add</button>
+</section>
+
+<div>
+  <app-todo-list (editEvent)="inputContent=$event" [todoAdded]="somethingAdded"></app-todo-list>
+</div>

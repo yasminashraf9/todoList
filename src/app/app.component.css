@@ -1,0 +1,29 @@
+section{
+    width: 80%;
+    margin: 30px 10%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+section input{
+    width: 30%;
+    outline: none;
+    padding: 15px 10px ;
+    border-radius: 5px;
+    border: none;
+    filter: drop-shadow(1px 1px 3px rgb(209, 209, 209));
+    background-color: rgb(250, 249, 249);
+    font-weight: bold;
+    color: gray;
+}
+section button{
+    padding: 0 20px;
+    background-color: rgba(50, 50, 245, 0.75);
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+section button:hover{
+    background-color: rgba(50, 50, 245, 0.9);
+}
+
